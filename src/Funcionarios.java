@@ -8,7 +8,6 @@ public class Funcionarios {
         this.idade = idade;
         this.salario = salario;
     }
-
     public void exibirFuncionario() {
         System.out.println("Nome: " + nome);
         System.out.println("Idade: " + idade);
@@ -17,6 +16,7 @@ public class Funcionarios {
     public double calcularSalario(double aumentoPercentual) {
         double aumento = salario * (aumentoPercentual / 100);
         double salarioTotal = salario + aumento;
-        return salarioTotal;
+        salario = salarioTotal;
+        return salario;
     }
 }
