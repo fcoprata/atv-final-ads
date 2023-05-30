@@ -7,6 +7,7 @@ public class Main {
 
         double salarioFinal = funcionario1.calcularSalario(10);
         System.out.println("Salário Final: R$" + salarioFinal);
+        funcionario1.exibirFuncionario();
 
         minhaEmpresa.adicionarFuncionario(funcionario1);
         minhaEmpresa.exibirFuncionarios();
