@@ -14,4 +14,9 @@ public class Funcionarios {
         System.out.println("Idade: " + idade);
         System.out.println("Salário Base: R$" + salario);
     }
+    public double calcularSalario(double aumentoPercentual) {
+        double aumento = salario * (aumentoPercentual / 100);
+        double salarioTotal = salario + aumento;
+        return salarioTotal;
+    }
 }
